@@ -1,0 +1,521 @@
+﻿
+@{
+    ViewBag.Title = "Kisilikler";
+ 
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Container/css/Kisilikler.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kişilik Envanter Testi</title>
+    <link href="~/Container/css/ProgressBar.css" rel="stylesheet" />
+
+    <link type='text/css' rel='stylesheet' href='stylesheet.css' />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans" />
+    <link href="~/Container/css/MyCss.css" rel="stylesheet" />
+
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/DataTables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="~/Container/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Container/css/TestCss.css" rel="stylesheet" />
+    <!-- animate CSS -->
+    <link href="~/Container/css/animate.css" rel="stylesheet" />
+
+    <!-- owl carousel CSS -->
+    <link href="~/Container/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Container/css/slick.css" rel="stylesheet" />
+    <!-- themify CSS -->
+    <link href="~/Container/css/themify-icons.css" rel="stylesheet" />
+    <link href="~/Container/css/magnific-popup.css" rel="stylesheet" />
+    <!-- flaticon CSS -->
+    <link href="~/Container/css/flaticon.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- font awesome CSS -->
+    <!-- swiper CSS -->
+    <link href="~/Container/css/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/slick.css">   <!-- style CSS -->
+    <link href="~/Container/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <header class="main_menu">
+        <div class="sub_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8">
+                        <div class="sub_menu_right_content">
+                            <a href="#"><i class="flaticon-phone-call"></i>+02 89 365 3652</a> <span>|</span>
+                            <a href="#"><i class="flaticon-at"></i>Info@example.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4">
+                        <div class="sub_menu_social_icon">
+                            <a href="#"><i class="flaticon-facebook"></i></a>
+                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="#"><i class="flaticon-skype"></i></a>
+                            <a href="#"><i class="flaticon-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_menu_iner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">
+
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                                 id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    @if (((User.IsInRole("A")) || (User.IsInRole("U"))))
+                                    {
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="/Home/Index">ANA SAYFA</a>
+                                        </li>}
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="/Kisilikler/Kisilikler">KİŞİLİK TİPLERİ</a>
+                                    </li>
+
+                                    @if (!((User.IsInRole("A")) || (User.IsInRole("U"))))
+                                    {
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="/Security/Login">GİRİŞ YAP</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="/Security/Login">Üye Ol</a>
+                                        </li>}
+                                    @if ((User.IsInRole("A")) || (User.IsInRole("U")))
+                                    {
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/KisilikEnvanteriTesti/KisilikEnvanteriTesti">KİŞİLİK ENVANTER TESTİ</a>
+                                        </li>}
+                                    @if (User.IsInRole("A"))
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/TestSonuclari/TestSonuclari">SONUÇLAR</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Reporting/Reporting">RAPORLAMA</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/User/UserSelect">KULLANICI YÖNET</a>
+                                        </li>}
+                                    @if ((User.IsInRole("A")) || (User.IsInRole("U")))
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/Security/Logout">ÇIKIŞ</a>
+                                        </li>}
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="yamukust"></div>
+    <div class="duz">
+        <div>
+            <div id="dikeyBaslik"> ANALİZCİLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/mimar.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik">MİMARLAR (INTJ)</p>
+                <p>Yükseklerde yalnız yaşamak, az rastlanır olmak ve kişilik özelliği olarak en stratejik kapasiteyi bulundurmak; bunların hepsi Mimarların çok iyi bildiği özelliklerdir.Mimarlar toplumun yüzde ikisini oluştururlar.Mimar kişilik özelliği taşıyan insanlar bir yandan hem hayalperest hem de kararlı, öte yandan hem hırslı hem de kendilerine özeldirler; şaşırtıcı derecede meraklı olmalarına rağmen enerjilerini israf etmezler..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> ANALİZCİLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/mantıkçı.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">MANTIKÇILAR (INTP)</p>
+                <p style="font-weight:500;">Mantıkçı kişilik tipi oldukça az bulunur cinstendir ve nüfusun sadece yüzde üçünü oluştururlar; kaldı ki bu onlar için iyi bir şeydir, çünkü onları “sıradan” oldukları düşüncesinden daha mutsuz edebilecek bir şey yoktur. Mantıkçılar mucitlikleri, yaratıcılıkları, özgün bakış açıları ve güçlü bilgi birikimleriyle gurur duyarlar.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> ANALİZCİLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/buyurucu.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik">BUYURUCULAR (ENTJ)</p>
+                <p> Buyurucular doğuştan liderdirler. Bu kişilik tipine sahip olanlar karizma ve güven yeteneklerini somutlaştırırlar ve kalabalıkların ortak bir hedef arkasında birleşmesini sağlayan bir otorite yansıtırlar. Ancak, Önder eşdeğerlerinin aksine, Buyurucular genelde acımasız bir mantık seviyesi ile karakterize edilirler ve sonu kendileri tarafından nereye vardırılırsa vardırılsın, amaçlarına ulaşmak için isteklerini, azimlerini ve keskin zekalarını kullanırlar.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> ANALİZCİLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/tartışmacı.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">TARTIŞMACILAR (ENTP)</p>
+                <p style="font-weight:500;">
+                    Tartışmacı kişilik tipine sahip insanlar, birbirini parçalayan argümanlar ve inançlar üzerinden gelişirler ve dizginlerini herkes görsün isterler.
+                    Zihinsel bir tartışma sürecini tartışmacılar dışında kimse daha çok sevemez, çünkü bu onlara çaba gerektirmeyen hızlı ince zekalarını tatbik etme, birikmiş bilgi darağacını genişletme ve fikirlerini ispatlamak için kıyaslanamaz fikirlere bağlanma kapasitesi fırsatı verir.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukust"></div>
+    <div class="duz">
+        <div>
+            <div id="dikeyBaslik"> DİPLOMATLAR</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/savunucu.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik">SAVUNUCULAR (INFJ)</p>
+                <p>TSavunucu kişilik tipi çok ender görülmekte olup, nüfusun yüzde birinden azını oluşturur, ama yine de dünya üzerinde izlerini bırakırlar. Doğuştan gelen bir idealizm ve ahlak hisleri vardır, ancak onları diğer idealist kişilik tiplerinden ayrı kılan kararlılıkları ve azimleridir; Savunucular boş oturan hayalperestler değil, hedeflerini gerçekleştirmek ve kalıcı bir olumlu etki bırakmak için somut adımlar atabilen kişilerdir.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> DİPLOMATLAR</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/arabulucu.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">ARABULUCULAR (INFP)</p>
+                <p style="font-weight:500;">
+                    Arabulucu kişilikler gerçek idealistlerdir, her zaman ve hatta en kötü kişiler ve olaylarda bile bir iyilik nüvesi ararlar, meseleleri daha iyi hale getirmenin yollarını bulmaya çalışırlar.
+                    Sakin, çekingen ve hatta utangaç algılanabilseler de, arabulucuların içsel bir alevi ve gerçekten de parlayabilecek bir tutkusu vardır.
+                    Arabulucu kişilik tipleri için yanlış anlaşılma riski ne yazık ki yüksektir;
+                    ama beraber zaman geçirmek için aynı kafada insanlar buldukları zaman hissedecekleri uyum, bir keyif ve ilham kaynağı olur.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> DİPLOMATLAR</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/Adsızönder.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik">ÖNDERLER (ENFJ)</p>
+                <p>
+                    Önderler tutku ve karizma ile dolu doğuştan liderlerdir. Çoğu zaman başkalarına ulaşan ve onlara başarmak ve dünyada iyi şeyler yapmak için ilham veren politikacılarımız,
+                    koçlarımız ve öğretmenlerimizdir.
+                    Etkilemeye yol açan doğal bir güvene sahip Önderler, başkalarının kendilerini ve topluluklarını geliştirmesi amacıyla birlikte çalışması için kılavuzluk etmekten büyük gurur ve zevk duyarlar..
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> DİPLOMATLAR</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/kampanyacı.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">KAMPANYACILAR (ENFP)</p>
+                <p style="font-weight:500;">
+                    Kampanyacı kişilik gerçek bir özgür ruhtur. Çoğunlukla partiye hayat veren kişilerdir, ancak başkalarıyla kurdukları sosyal ve duygusal bağların tadını çıkarmaya karşın, düpedüz heyecan ve içinde bulundukları anın zevki ile daha az ilgilidirler. Etkileyici, bağımsız, enerjik ve tutkulu olan nüfusun bu %7’lik kısmının tavizleri, herhangi bir kalabalıkta kolaylıkla hissedilir.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> GÖZCÜLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/Lojistikçii.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik"> LOJİSTİKÇİLER (ISTJ)</p>
+                <p>
+                    Lojistikçi kişilik tipinin, nüfusun yaklaşık %13’ünü oluşturan, en sık bulunan tip olduğu düşünülür. Lojistikçilerin belirgin özellikleri olan bütünlük, pratik mantık ve yorulmaksızın kendini adama,
+                    onları birçok ailenin yanı sıra hukuk büroları, askeriye gibi geleneklere, kurallara bağlı kalan kurumlar için hayati bir unsur kılar. Lojistikçi kişilik tipine sahip insanlar,
+                    faaliyetler için sorumluluk almaktan hoşlanırlar ve yaptıkları işin gururunu yaşamak isterler.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> GÖZCÜLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/savunmacı.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">SAVUNMACILAR (ISFJ)</p>
+                <p style="font-weight:500;">
+
+                    Savunmacılar empatik olmalarına rağmen, ailelerini veya arkadaşlarını korumaları gerektiği zaman öfkeli olabilir;
+                    sessiz ve içe dönük olmalarına karşın, iyi gelişmiş insani becerileri ve güçlü sosyal ilişkileri mevcuttur;
+                    ve bu kişilikler güvenlik ve kararlılık arayışında olsa da, anlaşıldıkları ve saygı duyulduklarını hissettikleri sürece değişime dikkat çekici derecede açık olabilirler.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> GÖZCÜLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/YÖNETİCİ.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik"> YÖNETİCİLER (ESTJ)</p>
+                <p>
+                    Yöneticiler gelenek ve düzenin temsilcileridir, aileler ve toplulukları bir araya getirmek için neyin doğru, neyin yanlış ve neyin sosyal olarak kabul edilebilir olduğuna dair anlayışlarını kullanırlar.
+                    Dürüstlük, adanmışlık ve onur değerlerini içselleştiren yönetici kişilik tipindeki insanların, kesin tavsiyeleri ve kılavuzluklarına değer verilir ve zorlu yollarda mutlu şekilde liderlik ederler.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> GÖZCÜLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/konsül.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">KONSÜLLER (ESFJ)</p>
+                <p style="font-weight:500;">
+
+                    Konsül kişilik tipini paylaşan insanlar, daha iyi bir ifade bulununcaya kadar tabiri caizse, popülerdir; kaldı ki, oldukça yaygın bir kişilik tipi olmaları ve nüfusun yüzde on ikisini oluşturmaları da düşünülünce, bu mantıklıdır.
+                    Konsüller lisede sınıfın amigo kızları veya futbol takımının oyun kurucusudurlar, ortamı belirlerler, bütün dikkatleri üzerilerine çekerler ve takımlarına zafer ve ün yolunda liderlik ederler.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> KAŞİFLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/becerikli.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik"> BECERİKLİLER (ISTP)</p>
+                <p>
+                    Becerikliler elleriyle ve gözleriyle keşfetmeyi, etraflarındaki dünyaya havalı bir mantıkçılık ve şevkli bir merakla dokunmayı ve incelemeyi severler.
+                    Bu kişilik tipine sahip insanlar doğal Yapımcılardır, bir projeden ötekine geçerler, faydalı ve sadece eğlence için fuzuli şeyler inşa ederler ve ilerledikçe kendi çevrelerinden daha fazla şey öğrenirler.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk">
+        <div>
+            <div id="beyazdikeyBaslik"> KAŞİFLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/maceracı.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">MACERACILAR (ISFP)</p>
+                <p style="font-weight:500;">
+                    Maceracı kişilik tipleri gerçek sanatçılardır, ancak bu tipik olarak dışarıda mutlu küçük ağaç resimleri yaptıkları anlamına gelmez.
+                    Yine de, çoğunlukla bunu mükemmel şekilde yapabilme kapasitesine sahiptirler.
+                    Bundan ziyade, toplum geleneklerinin sınırlarını zorlamak için estetiği, tasarımı ve hatta seçimleri ve hareketlerini kullanırlar.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="yamukust"></div>
+    <div class="duz">
+
+        <div>
+            <div id="dikeyBaslik"> KAŞİFLER</div>
+            <img style="margin:15px 15px 0px 0px;width:200px;height:200px;float:left" src="~/Container/kisilikler/girişimci.png" />
+            <div style="float:left;color:#eeeeee; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="baslik"> GİRİŞİMCİLER (ESTP)</p>
+                <p>
+                    Girişimci kişilik tipleri, kendi yakın çevreleri üzerinde her zaman bir etki bırakır; bir partide onları bulmanın en iyi yolu, onlar bir gruptan ötekine geçerken, etraflarında uçuşup dönen insan girdabına bakmanızdır.
+                    Kahkahalar atıp, etraftakileri lafını esirgemeyen, gerçekçi bir espri yeteneği ile eğlendiren girişimci kişilikler, ilginin merkezinde olmaya bayılırlar.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yamukalt"></div>
+    <div class="bosluk" style="height:500px;">
+        <div>
+            <div id="beyazdikeyBaslik"> KAŞİFLER</div>
+
+            <img style="margin:15px 0px 0px 15px;width:200px;height:200px;float:right" src="~/Container/kisilikler/eğlendirici.png" />
+            <div style="float:right;color:#1a1a2a; margin:30px 20px 0px 20px ;width:1433px;height:170px;">
+                <p class="beyazbaslik">EĞLENDİRİCİLER (ESFP)</p>
+                <p style="font-weight:500;">
+                    Eğer birisi aniden şarkı söylemeye ve dans etmeye başlıyorsa, bu eğlendirici kişilik tipidir. Eğlendiriciler anın heyecanına kapılırlar ve diğer herkesin de bu şekilde hissetmesini isterler.
+                    İş diğerlerini cesaretlendirmeye geldiğinde, başka hiçbir kişilik tipi vakitleri ve enerjileri konusunda eğlendiriciler kadar cömert değildir ve başka hiçbir
+                    kişilik tipi bunu onlar kadar karşı konulamaz bir tarzla yapamaz.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+ 
+   
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-3 col-xl-3">
+                    <div class="single-footer-widget footer_1">
+                        <a href="index.html">
+                            <img src="~/Container/img/footer-logo.png" /> <img src="img/footer-logo.png" alt="">
+                        </a>
+                        <p style="font-size:13px;">
+                            Web sitesinin İngilizce olmayan tüm sürümleri, kullanıcılarımızdan gelen resmi olmayan çeviriler içermektedir. Hiçbir şekilde bağlayıcı değildir, doğru oldukları garanti edilmez ve yasal bir etkisi yoktur. Resmi metin web sitesinin İngilizce versiyonudur. Lütfen support@16personalities.com adresine yanlış rapor etmeyi düşünün veya çeviri projemize katılın!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-2 col-xl-2 offset-xl-1">
+                    <div class="single-footer-widget">
+                        <h4>Best Services</h4>
+                        <ul>
+                            <li><a href="#">Car accident</a></li>
+                            <li><a href="#">Personal injury</a></li>
+                            <li><a href="#">Family law</a></li>
+                            <li><a href="#">Bank and financial</a></li>
+                            <li><a href="#">Capital market</a></li>
+                            <li><a href="#">Employment Law</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget footer_3">
+                        <h4> RESİM GALERİSİ</h4>
+                        <div class="footer_img">
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_1.png" />
+                            </div>
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_2.png" />
+                            </div>
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_3.png" />
+                            </div>
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_4.png" />
+                            </div>
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_5.png" />
+                            </div>
+                            <div class="single_footer_img">
+
+                                <img src="~/Container/img/footer_img/footer_img_6.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xl-3">
+                    <div class="single-footer-widget footer_icon">
+                        <h4>İLETİŞİM BİLGİLERİ</h4>
+                        <p>
+                            4361 Morningview Lane Artland , Pall Street
+                            Latimer, IA 50452 / 23654
+                        </p>
+                        <ul>
+                            <li><a href="#"><i class="ti-mobile"></i>+02 - 32 365 2654</a></li>
+                            <li><a href="#"><i class="ti-email"></i>ariclaw@law.com</a></li>
+                            <li><a href="#"><i class="ti-world"></i> ariclawyerfirm.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <p class="footer-text m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+
+    <script src="~/Scripts/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <!-- magnific js -->
+
+    <script src="~/Scripts/js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+
+    <script src="~/Scripts/js/swiper.min.js"></script>
+    <!-- masonry js -->
+
+    <script src="~/Scripts/js/masonry.pkgd.js"></script>
+    <!-- contact js -->
+
+    <script src="~/Scripts/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="~/Scripts/js/jquery.form.js"></script>
+
+    <script src="~/Scripts/js/jquery.validate.min.js"></script>
+
+    <script src="~/Scripts/js/mail-script.js"></script>
+    <script src="~/Scripts/js/custom.js"></script>
+    <script src="~/Scripts/js/contact.js"></script>
+    <script src="~/Scripts/js/slick.min.js"></script>
+    <!-- custom js -->
+
+
+</body>
+
+</html>

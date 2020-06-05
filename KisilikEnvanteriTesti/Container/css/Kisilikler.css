@@ -1,0 +1,64 @@
+﻿
+.yamukust {
+    width: 1000px;
+    height: 5px;
+    border-left: 2112px solid #191d34;
+    border-top: 100px solid white;
+    float: left;
+}
+
+.yamukalt {
+    width: 1000px;
+    height: 5px;
+    border-bottom: 100px solid white;
+    border-left: 2112px solid #191d34;
+    float: left;
+}
+
+.duz {
+    width: 2112px;
+    height: 325px;
+    background-color: #191d34;
+}
+
+.bosluk {
+    width: 2112px;
+    height: 325px;
+    background-color: white;
+}
+#dikeyBaslik {
+    color: #eeeeee;
+    float: left;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 75px 0px 0px 0px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#beyazdikeyBaslik {
+    color: #191d34;
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 75px 0px 0px 0px;
+    -webkit-transform: rotate(+90deg);
+    -moz-transform: rotate(+90deg);
+    -o-transform: rotate(+90deg);
+    -ms-transform: rotate(+90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.baslik 
+{
+    font-weight:bold;
+    font-size:24px;
+    color:#eeeeee;
+}
+.beyazbaslik {
+    font-weight: bold;
+    font-size: 24px;
+    color: #191d34;
+}

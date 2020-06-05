@@ -1,0 +1,52 @@
+﻿@model KisilikEnvanteriTesti.Models.UserMail.UserMailClass
+@{
+    ViewBag.Title = "SecurityVerification";
+    Layout = "~/Views/_Layout/Layout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="text-center" id="title">Parolanızı mı Unuttunuz?</h2>
+
+        <hr>
+
+    </div>
+    <div class="col-md-2">
+        <!-------null------>
+    </div>
+    <div class="col-md-5">
+        <table class="table table-nonbordered" style="margin-left:330px;">
+            @using (Html.BeginForm("SecurityVerification", "ForgotPassword", FormMethod.Post, new { @class = "form-group" }))
+            {@Html.AntiForgeryToken()
+
+            <tr>
+                <td>  <span class="text-uppercase">Güvenlik Kodu: </span></td>
+                <td>  @Html.TextBoxFor(m => m.GuvenlikKodu, new { @class = "form-control" }) </td>
+            </tr>
+
+
+            <tr>
+                <td>  </td>
+                <td>  <span style="color:red">@ViewBag.Mesaj</span><button type="submit" class="btn btn-primary">Doğrula</button></td>
+            </tr>
+        }
+            @{
+
+                var message = TempData["AlertMessage"] ?? string.Empty;
+
+            }
+
+
+
+        </table>
+        <script type="text/javascript">
+                 var message = '@message';
+
+                if(message) alert(message);
+
+        </script>
+
+    </div>
+</div>
+

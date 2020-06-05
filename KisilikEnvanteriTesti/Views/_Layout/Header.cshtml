@@ -1,0 +1,64 @@
+﻿<div class="main_menu_iner">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            @if (((User.IsInRole("A")) || (User.IsInRole("U"))))
+                            {
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Home/Index">ANA SAYFA</a>
+                                </li>}
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/Kisilikler/Kisilikler">KİŞİLİK TİPLERİ</a>
+                            </li>
+
+                            @if (!((User.IsInRole("A")) || (User.IsInRole("U"))))
+                            {
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Security/Login">GİRİŞ YAP</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Security/Login">Üye Ol</a>
+                                </li>}
+                            @if ((User.IsInRole("A")) || (User.IsInRole("U")))
+                            {
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/KisilikEnvanteriTesti/KisilikEnvanteriTesti">KİŞİLİK ENVANTER TESTİ</a>
+                                </li>}
+                            @if (User.IsInRole("A"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/TestSonuclari/TestSonuclari">SONUÇLAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Reporting/Reporting">RAPORLAMA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/User/UserSelect">KULLANICI YÖNET</a>
+                                </li>}
+                            @if ((User.IsInRole("A")) || (User.IsInRole("U")))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Security/Logout">ÇIKIŞ</a>
+                                </li>}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+

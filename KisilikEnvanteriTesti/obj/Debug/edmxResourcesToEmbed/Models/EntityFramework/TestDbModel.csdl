@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SehirID" Type="Int32" />
+    <Property Name="DogumTarihi" Type="DateTime" Precision="0" />
+    <Property Name="Cinsiyet" Type="Boolean" />
+    <Property Name="MedeniHal" Type="Boolean" />
+    <Property Name="Sonuc" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Yetki" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Sehirler" Relationship="Self.FK_kullanici_Sehirler" FromRole="kullanici" ToRole="Sehirler" />
+    <Property Name="Sure" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Sehirler">
+    <Key>
+      <PropertyRef Name="SehirId" />
+    </Key>
+    <Property Name="SehirId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SehirAdi" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="kullanici" Relationship="Self.FK_kullanici_Sehirler" FromRole="Sehirler" ToRole="kullanici" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_kullanici_Sehirler">
+    <End Role="Sehirler" Type="Self.Sehirler" Multiplicity="0..1" />
+    <End Role="kullanici" Type="Self.kullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sehirler">
+        <PropertyRef Name="SehirId" />
+      </Principal>
+      <Dependent Role="kullanici">
+        <PropertyRef Name="SehirID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="kullanici" EntityType="Self.kullanici" />
+    <EntitySet Name="Sehirler" EntityType="Self.Sehirler" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_kullanici_Sehirler" Association="Self.FK_kullanici_Sehirler">
+      <End Role="Sehirler" EntitySet="Sehirler" />
+      <End Role="kullanici" EntitySet="kullanici" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tel" Type="varchar" MaxLength="15" />
+    <Property Name="SehirID" Type="int" />
+    <Property Name="DogumTarihi" Type="date" />
+    <Property Name="Cinsiyet" Type="bit" />
+    <Property Name="MedeniHal" Type="bit" />
+    <Property Name="Sonuc" Type="varchar" MaxLength="5" />
+    <Property Name="Yetki" Type="varchar" MaxLength="1" />
+    <Property Name="Sure" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Sehirler">
+    <Key>
+      <PropertyRef Name="SehirId" />
+    </Key>
+    <Property Name="SehirId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SehirAdi" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_kullanici_Sehirler">
+    <End Role="Sehirler" Type="Self.Sehirler" Multiplicity="0..1" />
+    <End Role="kullanici" Type="Self.kullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sehirler">
+        <PropertyRef Name="SehirId" />
+      </Principal>
+      <Dependent Role="kullanici">
+        <PropertyRef Name="SehirID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TestDBModelStoreContainer">
+    <EntitySet Name="kullanici" EntityType="Self.kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sehirler" EntityType="Self.Sehirler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_kullanici_Sehirler" Association="Self.FK_kullanici_Sehirler">
+      <End Role="Sehirler" EntitySet="Sehirler" />
+      <End Role="kullanici" EntitySet="kullanici" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

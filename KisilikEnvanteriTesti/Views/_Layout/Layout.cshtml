@@ -1,0 +1,130 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Container/css/Kisilikler.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kişilik Envanter Testi</title>
+    <link href="~/Container/css/ProgressBar.css" rel="stylesheet" />
+
+    <link type='text/css' rel='stylesheet' href='stylesheet.css' />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans" />
+    <link href="~/Container/css/MyCss.css" rel="stylesheet" />
+
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/DataTables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="~/Container/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Container/css/TestCss.css" rel="stylesheet" />
+    <!-- animate CSS -->
+    <link href="~/Container/css/animate.css" rel="stylesheet" />
+
+    <!-- owl carousel CSS -->
+    <link href="~/Container/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Container/css/slick.css" rel="stylesheet" />
+    <!-- themify CSS -->
+    <link href="~/Container/css/themify-icons.css" rel="stylesheet" />
+    <link href="~/Container/css/magnific-popup.css" rel="stylesheet" />
+    <!-- flaticon CSS -->
+    <link href="~/Container/css/flaticon.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- font awesome CSS -->
+
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .container-fluid2 {
+            padding: 50px;
+        }
+
+        .container2 {
+            background-color: white;
+            padding: 50px;
+        }
+
+        #title {
+            font-family: 'Lobster', cursive;
+        }
+    </style>
+    <!-- swiper CSS -->
+    <link href="~/Container/css/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/slick.css">   <!-- style CSS -->
+    <link href="~/Container/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+        <div class="sub_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8">
+                        <div class="sub_menu_right_content">
+                            <a href="#"><i class="flaticon-phone-call"></i>+02 89 365 3652</a> <span>|</span>
+                            <a href="#"><i class="flaticon-at"></i>Info@example.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4">
+                        <div class="sub_menu_social_icon">
+                            <a href="#"><i class="flaticon-facebook"></i></a>
+                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="#"><i class="flaticon-skype"></i></a>
+                            <a href="#"><i class="flaticon-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @Html.Partial("/Views/_Layout/Header.cshtml")
+        <section class="about_part section_bg"  style="padding:60px;" >
+            <div class="container">
+                @RenderBody()
+            </div>
+        </section>
+        @Html.Partial("/Views/_Layout/Footer.cshtml")
+     
+        <script src="~/Scripts/js/jquery-1.12.1.min.js"></script>
+        <!-- popper js -->
+
+        <script src="~/Scripts/js/popper.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="~/Scripts/js/bootstrap.min.js"></script>
+        <!-- magnific js -->
+
+        <script src="~/Scripts/js/jquery.magnific-popup.js"></script>
+        <!-- swiper js -->
+
+        <script src="~/Scripts/js/swiper.min.js"></script>
+        <!-- masonry js -->
+
+        <script src="~/Scripts/js/masonry.pkgd.js"></script>
+        <!-- contact js -->
+
+        <script src="~/Scripts/js/jquery.ajaxchimp.min.js"></script>
+
+        <script src="~/Scripts/js/jquery.form.js"></script>
+
+        <script src="~/Scripts/js/jquery.validate.min.js"></script>
+
+        <script src="~/Scripts/js/mail-script.js"></script>
+        <script src="~/Scripts/js/custom.js"></script>
+        <script src="~/Scripts/js/contact.js"></script>
+        <script src="~/Scripts/js/slick.min.js"></script>
+        <!-- custom js -->
+ 
+
+</body>
+
+</html>

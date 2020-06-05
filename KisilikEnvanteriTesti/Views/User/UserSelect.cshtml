@@ -1,0 +1,72 @@
+﻿@model  List<KisilikEnvanteriTesti.Models.EntityFramework.kullanici>
+@{
+    ViewBag.Title = "UserSelect";
+    Layout = "~/Views/_Layout/Layout.cshtml";
+}
+
+<h2>&nbsp;  &nbsp;Kullanıcı Listesi</h2>
+<script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTables/dataTables.bootstrap.min.js"></script>
+<script src="~/Scripts/DataTables/dataTables.bootstrap4.js"></script>
+<table id="tbl1" class="table table-bordered">
+    <thead>
+        <tr style="font-size:20px">
+            <th>Kullanıcı Adı</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Doğum Tarihi</th>
+            <th>Yaş</th>
+            <th>Şehir</th>
+            <th>Cinsiyet</th>
+            <th>Medeni Durum</th>
+            <th>Yetki Durumu</th>
+            <th>Yetki Güncelle</th>
+
+        </tr>
+    </thead>
+    <tbody>
+      
+          
+            @foreach (var user in Model)
+            {
+                <tr style="font-size:15px; font-family:sans-serif; ">
+                 
+                    <td>@user.KullaniciAdi</td>
+                    <td>@user.Ad</td>
+                    <td>@user.Soyad</td>
+                    <td>@user.DogumTarihi.Value.ToString("dd.MM.yyyy")</td>
+                    <td>@(DateTime.Now.Year - user.DogumTarihi.Value.Year)</td>
+                    <td>@user.Sehirler.SehirAdi</td>
+                    <td>@(user.Cinsiyet == true ? "Kadın" : "Erkek")</td>
+                    <td>@(user.MedeniHal == true ? "Bekar" : "Evli")</td>
+
+                    <td>@(user.Yetki == "U" ? "Kullanıcı" : "Yönetici")</td>
+
+
+
+                    @if (user.Yetki != "A")
+                    {
+                        <td>@Html.ActionLink("Yönetici Yap","GoruntuleKullanici",new { id=user.KullaniciID}, new { @class="btn btn-light"})</td>
+                    }
+                    @if (user.Yetki == "A")
+                    {
+                        <td>@Html.ActionLink("Kullanıcı Yap", "GoruntuleYonetici", new { id = user.KullaniciID }, new { @class = "btn btn-dark" })</td>
+                    }
+
+                </tr>
+            }
+
+
+    </tbody>
+
+   
+
+</table>
+<script>
+    $('#tbl1').DataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+        }
+    });
+
+</script>

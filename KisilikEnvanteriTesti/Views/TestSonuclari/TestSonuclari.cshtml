@@ -1,0 +1,59 @@
+﻿@model  List<KisilikEnvanteriTesti.Models.EntityFramework.kullanici>
+@{
+    /**/
+
+    ViewBag.Title = "TestSonuclari";
+    Layout = "~/Views/_Layout/Layout.cshtml";
+}
+<h2>&nbsp;  &nbsp;Test Sonuçları</h2>
+<script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTables/dataTables.bootstrap.min.js"></script>
+<script src="~/Scripts/DataTables/dataTables.bootstrap4.js"></script>
+<table id="tbl1" class="table table-bordered">
+    <thead>
+        <tr style="font-size:20px">
+
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yaş</th>
+            <th>Şehir</th>
+            <th>E-Posta</th>
+            <th>Tel</th>
+            <th>Cinsiyet</th>
+            <th>Medeni Durum</th>
+            <th>Sonuç</th>
+            <th>Süre</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var user in Model)
+        {
+        <tr style="font-size:15px; font-family:sans-serif; ">
+            <td>@user.Ad</td>
+            <td>@user.Soyad</td>
+            <td>@(DateTime.Now.Year - user.DogumTarihi.Value.Year)</td>
+            <td>@user.Sehirler.SehirAdi</td>
+            <td>@user.Mail</td>
+            <td>@user.Tel</td>
+            <td>@(user.Cinsiyet == true ? "Kadın" : "Erkek")</td>
+            <td>@(user.MedeniHal == true ? "Bekar" : "Evli")</td>
+            <td>@user.Sonuc</td>
+            <td>@user.Sure</td>
+
+        </tr>
+        }
+            
+    </tbody>
+</table>
+
+<script>
+    $('#tbl1').DataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+        }
+    });
+
+</script>

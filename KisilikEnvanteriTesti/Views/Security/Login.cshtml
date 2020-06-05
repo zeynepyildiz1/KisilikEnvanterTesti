@@ -1,0 +1,124 @@
+﻿@model KisilikEnvanteriTesti.Models.UserModel.UserModelClass
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_Layout/Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="text-center" id="title">Kaydol veya Giriş Yap</h2>
+        <span class="text-center">
+            <small id="passwordHelpInline" class="text-muted"> Developer: follow me on facebook <a href="https://www.facebook.com/JheanYu"> John niro yumang</a> inspired from <a href="https://p.w3layouts.com/">https://p.w3layouts.com/</a>.</small>
+        </span>
+        <hr>
+        <div class="row">
+            <div class="col-md-5">
+                <table class="table table-nonbordered">
+                    @using (Html.BeginForm("Signup", "Security", FormMethod.Post, new { @class = "form-group" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <span class="text-uppercase"> Kaydol </span>
+                        <tr>
+                            <td> <span class="text-uppercase"> AD: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.Ad, new { @class = "form-control" }) @Html.ValidationMessageFor(m => m.Ad)</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> SOYAD: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.Soyad, new { @class = "form-control" }) @Html.ValidationMessageFor(m => m.Soyad)</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> KULLANICI ADI: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.SKullaniciAdi, new { @class = "form-control", placeholder = "kullaniciadi" }) @Html.ValidationMessageFor(m => m.SKullaniciAdi)</td>
+                        </tr>
+                        <tr>
+                            <td>  <span class="text-uppercase">PAROLA: </span></td>
+                            <td>  @Html.PasswordFor(m => m.SSifre, new { @class = "form-control", placeholder = "*******" }) @Html.ValidationMessageFor(m => m.SSifre)</td>
+                        </tr>
+                        <tr>
+                            <td>  <span class="text-uppercase">PAROLA TEKRAR: </span></td>
+                            <td>  @Html.PasswordFor(m => m.SSifreTekrar, new { @class = "form-control", placeholder = "*******" }) @Html.ValidationMessageFor(m => m.SSifreTekrar)</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> E-POSTA: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.Mail, new { @class = "form-control", placeholder = "mail@ornek.com" })@Html.ValidationMessageFor(m => m.Mail)</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> TEL: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.Tel, new { @class = "form-control", placeholder = "05xxxxxxxxx", type = "phone" }) @Html.ValidationMessageFor(m => m.Tel)</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> İL: </span></td>
+                            <td> @Html.DropDownListFor(m => m.SehirID, new SelectList(Model.Sehirler, "SehirId", "SehirAdi"), new { @class = "form-control" })</td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> DOĞUM TARİHİ: </span></td>
+                            <td>  @Html.TextBoxFor(m => m.DogumTarihi, "{0:dd.MM.yyyy}", new { @class = "form-control", type = "date" }) @Html.ValidationMessageFor(m => m.DogumTarihi) </td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> CİNSİYET: </span></td>
+                            <td>
+                                <label> @Html.RadioButtonFor(m => m.Cinsiyet, true, new { Checked = "checked" }) Kadın</label>
+                                <label>@Html.RadioButtonFor(m => m.Cinsiyet, false) Erkek</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <span class="text-uppercase"> MEDENİ DURUM: </span></td>
+                            <td>
+                                <label> @Html.RadioButtonFor(m => m.MedeniHal, true, new { Checked = "checked" }) Bekar</label>
+                                <label>@Html.RadioButtonFor(m => m.MedeniHal, false) Evli</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>  </td>
+                            <td>  <span style="color:red">@ViewBag.Mesaj2</span><button type="submit" class="btn btn-primary">Kaydol</button></td>
+                        </tr>
+                    }
+                    @{
+
+                        var message = TempData["AlertMessage"] ?? string.Empty;
+
+                    }
+
+                </table>
+                <script type="text/javascript">
+                 var message = '@message';
+
+                if(message) alert(message);
+
+                </script>
+            </div>
+            <div class="col-md-2">
+                <!-------null------>
+            </div>
+            <div class="col-md-5">
+                <table class="table table-nonbordered">
+                    @using (Html.BeginForm("Login", "Security", FormMethod.Post, new { @class = "form-group" }))
+                    {
+                        <span class="text-uppercase"> GİRİŞ YAP </span>
+                        <tr>
+                            <td> <span class="text-uppercase"> Kullanıcı Adı: </span></td>
+                            <td>
+                                @Html.TextBoxFor(m => m.KullaniciAdi, new { @class = "form-control", placeholder = "kullaniciadi" }) @Html.ValidationMessageFor(m => m.KullaniciAdi)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>  <span class="text-uppercase">Parola: </span></td>
+                            <td>  @Html.PasswordFor(m => m.Sifre, new { @class = "form-control", placeholder = "*******" }) @Html.ValidationMessageFor(m => m.Sifre)<a style="margin-top:6px;float:left;" href="/ForgotPassword/ForgotPassword/">Parolamı Unuttum</a></td>
+                        </tr>
+                        <tr>
+                            <td>  </td>
+                            <td>  <span style="color:red">@ViewBag.Mesaj</span><button type="submit" class="btn btn-primary">Giriş</button> <br /> </td>
+                        </tr>
+
+                    }
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <span class="text-center">
+        <small id="passwordHelpInline" class="text-muted"> Developer:<a href="http://www.psau.edu.ph/"> Pampanga state agricultural university ?</a> BS. Information and technology students 2017 Credits: <a href="https://v4-alpha.getbootstrap.com/">boostrap v4.</a></small>
+    </span>
+</div>

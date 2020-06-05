@@ -1,0 +1,138 @@
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.dll.config
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.pdb
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.exe
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.exe.config
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.rsp
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.exe
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.exe.config
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.rsp
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.AppContext.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Collections.Immutable.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Console.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Compression.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.FileSystem.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Pipes.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Reflection.Metadata.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.AccessControl.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Claims.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.ValueTuple.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XPath.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.exe
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.exe.config
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.rsp
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\VBCSCompiler.exe
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\VBCSCompiler.exe.config
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\EntityFramework.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\EntityFramework.SqlServer.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Razor.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.Deployment.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.Razor.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Helpers.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Mvc.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Razor.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.Deployment.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.Razor.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Helpers.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Mvc.resources.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csproj.CoreCompileInputs.cache
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csproj.CopyComplete
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.dll
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.pdb
+E:\Depot\2019\ZeynepYildiz\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csprojAssemblyReference.cache
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.dll.config
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\KisilikEnvanteriTesti.pdb
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.exe
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.exe.config
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csc.rsp
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.exe
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.exe.config
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\csi.rsp
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.AppContext.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Collections.Immutable.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Console.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Compression.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.FileSystem.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.IO.Pipes.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Reflection.Metadata.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.AccessControl.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Claims.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.ValueTuple.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XPath.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.exe
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.exe.config
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\vbc.rsp
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\VBCSCompiler.exe
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\roslyn\VBCSCompiler.exe.config
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\EntityFramework.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\EntityFramework.SqlServer.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Razor.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.Deployment.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Webpages.Razor.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Helpers.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\System.Web.Mvc.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Razor.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.Deployment.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Webpages.Razor.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Helpers.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\bin\tr\System.Web.Mvc.resources.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csprojAssemblyReference.cache
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csproj.CoreCompileInputs.cache
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.csproj.CopyComplete
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.dll
+E:\Depot\2019\ZeynepYildiz - Kopya (3)\KisilikEnvanteriTesti\KisilikEnvanteriTesti\obj\Debug\KisilikEnvanteriTesti.pdb

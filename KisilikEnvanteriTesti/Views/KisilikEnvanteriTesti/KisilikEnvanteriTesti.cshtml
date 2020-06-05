@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "KisilikEnvanteriTesti";
+    Layout = "~/Views/_Layout/Layout.cshtml";
+}
+<script src="~/Scripts/TestJs/ProgressBar.js"></script>
+
+    <div id='container'>
+        <div id='title'>
+            <h1 style="margin-top:20px;">Kişilik Envanteri Testi</h1>
+            <div id="box">
+                <img style="float:left;width:40px; height:40px;margin-left:10px;margin-top: 3px;" src="~/Container/myimg/eltimer.png" />
+                <div style="float:left;font-weight:bold;margin-left: 5px;margin-top: 6px;" id="sure"></div>
+            </div>
+            <div id="myProgress"><div id="myBar"><div id="ptext"></div></div> </div>
+        </div>
+        <br />
+        <img id="img" src="~/Container/myimg/16-personalities-test.png" />
+        <div id='quiz'></div>
+        <button style="margin-left:2px;width:65px;height:50px" class='btn btn-dark' id='next'>İleri</button> &nbsp;
+        <button style="width:65px;height:50px" class='btn btn-dark' id='prev'>Geri</button>
+        <button style="margin-top:3px;margin-left:2px;" class='btn btn-dark' id='start'>Tekrar Çöz</button>
+        <button style="margin-top:3px;" class='btn btn-dark' id='sonuckayit'>Sonucu Kaydet</button>
+        <a href="#" style="margin-left:335px;" id="baslat" class="btn_1">Başlat </a>
+    </div>
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script src="~/Scripts/TestJs/TestJs.js"></script>
